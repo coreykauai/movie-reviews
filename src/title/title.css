@@ -1,5 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .neato {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   width: 30rem;
   height: 5rem;
   display: flex;
@@ -14,13 +20,7 @@
 }
 
 :root {
-  --glow-color: rgb(255, 237, 177);
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+  --glow-color: rgb(196, 255, 177);
 }
 
 .glowing-btn {
@@ -75,7 +75,7 @@
   left: 0;
   right: 0;
   opacity: 0.7;
-  filter: blur(1em);
+  filter: blur(1.5em);
   transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
   background: var(--glow-color);
   pointer-events: none;

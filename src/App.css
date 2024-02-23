@@ -3,7 +3,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(34, 34, 34);
+  background-color: rgb(20, 20, 20);
   color: rgb(229, 229, 229);
 }
 
@@ -20,42 +20,72 @@ body {
   border-radius: 1rem;
 }
 
-.centerMovie {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50rem;
-  height: auto;
-  background-color: rgb(44, 43, 43);
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+img {
+  box-shadow: inset -82px 0px 45px 7px rgba(0, 0, 0, 0.75);
 }
 
-.moveandtitle {
-  width: 100%;
-  height: auto;
+.centerMovie {
+  display: flex;
+  height: 50rem;
+  width: 100vw;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  margin-top: 5rem;
+}
+
+.maintitle {
+  position: absolute;
+  top: 20rem;
+  left: 5rem;
+}
+
+.spotLightTitle {
+  padding-left: 1rem;
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+
+.details {
+  font-size: 15px;
+  font-weight: 300;
+  padding-left: 2rem;
 }
 
 .spotlightPoster {
-  height: 25rem;
-  border-radius: 0.3rem;
+  height: 50rem;
+  width: 100vw;
+  mask-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgb(145, 152, 229) 75%
+  );
+}
+
+.words {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 45rem;
+  z-index: 5;
 }
 
 .description {
-  width: 20rem;
-  height: 30rem;
+  width: 40rem;
   font-size: 20px;
-  margin: 15rem 0 0 5rem;
+  margin: 5rem 0 5rem 5rem;
+  position: absolute;
+  left: 3rem;
+  top: 40rem;
 }
 
 .moreLikeThis {
   display: flex;
   align-items: center;
   overflow-x: auto;
-  width: 75%;
-  height: 30rem;
+  width: 70%;
+  height: 25rem;
   gap: 20px;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 .movie {
